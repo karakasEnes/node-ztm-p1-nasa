@@ -11,6 +11,7 @@
     "start-client": "npm start --prefix client",
     "watch": "concurrently  npm:start-*",
     "deploy": "npm run build --prefix client && npm start --prefix server",
+    "deploy:conc": "concurrently ",
     "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
     "test": "npm test --prefix server && npm test --prefix client"
   },
